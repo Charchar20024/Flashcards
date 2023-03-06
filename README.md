@@ -4,6 +4,8 @@ Submitted by: **Charidi Stevens**
 
 This web app: **insert description**
 
+Deployed Application: [Gibberish Game Cards Deployed Site](https://gibberishgamecards.netlify.app/)
+
 Time spent: **9** hours spent in total
 
 ## Required Features
