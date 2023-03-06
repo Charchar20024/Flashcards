@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-<img src="Walkthrough.gif" width='700px' alt='Video Walkthrough'>
+<img src="Screen_Recording_2023-03-06_at_3_02_12_PM_AdobeExpress.gif" width='700px' alt='Video Walkthrough'>
 
 
 ## License
