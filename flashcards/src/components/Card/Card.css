@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+.card-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+.card{
+    width: 700px;
+    height: 350px;
+    background-color:white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 2px #0000004d;
+    position: relative;
+    
+}
+.card-num{
+    color: darkgrey;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+}
+.card-content{
+    font-size: 50px;
+    font-family: 'Karla', sans-serif;
+    
+    height: 250px;
+    align-items: center;
+    height: 200px;
+}
+.content{  
+    align-items: center;
+    
+}
+.card-nav{
+    display: flex;
+    align-items: flex-end;
+    
+   
+
+
+}
