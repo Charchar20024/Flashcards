@@ -21,7 +21,7 @@ The following functionality are completed:
 
 ## Video Walkthrough
 
-<img src="ezgif.com-video-to-gif (2).gif" width='700px' alt='Video Walkthrough'>
+<img src="ezgif.com-video-to-gif (4).gif" width='700px' alt='Video Walkthrough'>
 
 
 ## License
