@@ -2,7 +2,7 @@
 
 Submitted by: **Charidi Stevens**
 
-This web app: **insert description**
+This web app: **Gibberish Flashcard Game Night** is a flashcard app inspired by the card game Incohearent!
 
 Deployed Application: [Gibberish Game Cards Deployed Site](https://gibberishgamecards.netlify.app/)
 
@@ -17,13 +17,6 @@ The following **required** functionality is completed:
 - [X] **A list of card pairs is created**
 - [X] **Clicking on the card shows the corresponding component of the information pair**
 - [X] **Clicking the next button displays a random new card**
-
-The following **optional** features are implemented:
-
-- [ ] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-  - [ ] *visual style implemented*
-
 
 ## Video Walkthrough
 
