@@ -1,7 +1,9 @@
 import './Card.css'
+import ReactCardFlip from "react-card-flip";
 import { useState } from 'react'
 
 import NavButton from '../NavButton/NavButton'
+
 export const cardInfo = {
   easy: {
     1:{
@@ -47,123 +49,141 @@ export const cardInfo = {
   } ,
   medium: {
     1:{
-        front: ``,
-        back: ``,
+        front: `gerr have it eef alls`,
+        back: `gravity falls`,
     },
     2:{
-        front: ``,
-        back: ``,
+        front: `hand boar gerr`,
+        back: `hamburger`,
     },
     3:{
-        front: ``,
-        back: ``,
+        front: `pole hair rowed calm era`,
+        back: `Polaroid camera`,
     },
     4:{
-        front: ``,
-        back: ``,
+        front: `bore third hay par tea`,
+        back: `birthday party`,
     },
     5:{
-        front: ``,
-        back: ``,
+        front: `sum oak ed sam own`,
+        back: `smoked salmon`,
     },
     6:{
-        front: ``,
-        back: ``,
+        front: `fear eeg hot mud her`,
+        back: `fairy godmother`,
     },
     7:{
-        front: ``,
-        back: ``,
+        front: `eel own mosque`,
+        back: `Elon Musk`,
     },
     8:{
-        front: ``,
-        back: ``,
+        front: `ghast haste own`,
+        back: `gas station`,
     },
     9:{
-        front: ``,
-        back: ``,
+        front: `hoe tell lob he`,
+        back: `hotel lobby`,
     },
     10:{
-        front: ``,
-        back: ``,
+        front: `catch sup ham us terd`,
+        back: `ketchup and mustard`,
     },
   },
   hard: {
     1:{
-        front: ``,
-        back: ``,
+        front: `plea center eruope as word`,
+        back: `please enter your password`,
     },
     2:{
-        front: ``,
-        back: ``,
+        front: `tiga tye grr eyes crane`,
+        back: `tiger tiger ice cream`,
     },
     3:{
-        front: ``,
-        back: ``,
+        front: `chalk oil let malks chake`,
+        back: `chocolate milkshake`,
     },
     4:{
-        front: ``,
-        back: ``,
+        front: `fresh van ill ack app ouch chin owe`,
+        back: `French vanilla cappuccino`,
     },
     5:{
-        front: ``,
-        back: ``,
+        front: `pun show bud nor eat earn`,
+        back: `punch bug no return`,
     },
     6:{
-        front: ``,
-        back: ``,
+        front: `pun kit spies lot tay`,
+        back: `pumpkin spice latte`,
     },
     7:{
-        front: ``,
-        back: ``,
+        front: `saw foot bowl dags`,
+        back: `soft boiled eggs`,
     },
     8:{
-        front: ``,
-        back: ``,
+        front: `hatch meows hide hobo dad`,
+        back: `cash me ousside how bow dat`,
     },
     9:{
-        front: ``,
-        back: ``,
+        front: `own wind stays weave hair ping`,
+        back: `on wednesdays, we wear pink`,
     },
     10:{
-        front: ``,
-        back: ``,
+
+        front: `Thatch hutches lied`,
+        back: `The cha cha slide`,
     },
   },
 }
 
 
 const Card = (props) => {
-  const [numCard, setNumCard] = useState(1)
-  const [cardContent, setCardContent] = useState("fifed holler food lawn")
-  console.log(numCard)
+  
+  const [flip, setFlip] = useState(false);
+  
+
 
   const cardClick = () => { 
-    if(cardContent==cardInfo.easy[numCard].front){
-        setCardContent(cardInfo.easy[numCard].back);
+    if(props.cardContent==props.level[props.numCard].front){
+        setFlip(!flip)
+        props.setCardContent(props.level[props.numCard].back);
+        
  
     }else{
-        setCardContent(cardInfo.easy[numCard].front);
+       setFlip(!flip)
+       props.setCardContent(props.level[props.numCard].front);
+        
     }
   
  }
 
   return (
-    <div className='card-2'>
-      <div className='card' onClick={cardClick}>
-        <div className='card-info'>
-             <p className='card-num'>{numCard}/10</p>
-        </div>
-        <div className='card-content'>
-          <p className='content' >{cardContent}</p> 
-        </div>
-      </div>
-      <NavButton 
-        numCard={numCard}
-        setNumCard={setNumCard}
-        setCardContent={setCardContent}
-      />
+    <div className='cards'>
+        <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+            <div className={props.cardColor} onClick={cardClick}>
+                <div className='card-info'>
+                    <p className='card-num'>{props.numCard}/10</p>
+                </div>
+                <div className='card-content'>
+                    <p className='content' >{props.cardContent}</p> 
+                </div>
+            </div>
+            
+            <div className={props.cardColor} onClick={cardClick}>
+                <div className='card-info'>
+                    <p className='card-num'>{props.numCard}/10</p>
+                </div>
+                <div className='card-content'>
+                    <p className='content' >{props.cardContent}</p> 
+                </div>
+            </div>
+        </ReactCardFlip> 
+        <NavButton 
+            numCard={props.numCard}
+            setNumCard={props.setNumCard}
+            setCardContent={props.setCardContent}
+            level={props.level}
+        />
     </div>
-    )
+  )
 }
 
 export default Card

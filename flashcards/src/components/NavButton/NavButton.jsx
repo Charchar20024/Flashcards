@@ -2,16 +2,18 @@ import './NavButton.css'
 
 import ArrowForward from '../assets/arrow_forward.svg'
 import ArrowBack from '../assets/arrow_back.svg'
-import { cardInfo } from '../Card/Card'
+
 
 const NavButton = (props) => {
  
   const nextCard = () => { 
-    props.setNumCard(props.numCard+1);
-    props.setCardContent(cardInfo.easy[props.numCard+1].front);
+    if(props.numCard<10){
+      props.setNumCard(props.numCard+1);
+      props.setCardContent(props.level[props.numCard+1].front);
+    }
   }
   const prevCard = () => {
-     props.setCardContent(cardInfo.easy[props.numCard-1].front);
+     props.setCardContent(props.level[props.numCard-1].front);
      props.setNumCard(props.numCard-1); 
    }
 
