@@ -20,7 +20,7 @@ The following **required** functionality is completed:
 
 ## Video Walkthrough
 
-<img src="ezgif.com-video-to-gif (1).gif" width='700px' alt='Video Walkthrough'>
+<img src="ezgif.com-video-to-gif (2).gif" width='700px' alt='Video Walkthrough'>
 
 
 ## License
