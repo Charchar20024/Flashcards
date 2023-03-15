@@ -1,4 +1,4 @@
-# Web Development Project 2 - *Gibberish Flashcard Game Night*
+# Web Development Project 2 - *Gibberish Flashcard Game Night pt.1*
 
 Submitted by: **Charidi Stevens**
 
