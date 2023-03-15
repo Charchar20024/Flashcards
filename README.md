@@ -4,7 +4,7 @@ Submitted by: **Charidi Stevens**
 
 This web app: **Gibberish Flashcard Game Night** is a flashcard app inspired by the card game Incohearent!
 
-Deployed Application: [Gibberish Game Cards Deployed Site](https://gibberishgamecards.netlify.app/)
+Deployed Application: [Gibberish Game Cards Deployed Site](https://gibberishgamecardspt1.netlify.app/)
 
 Time spent: **9** hours spent in total
 
