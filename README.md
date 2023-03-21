@@ -17,6 +17,10 @@ The following functionality are completed:
 - [X] **A list of card pairs is created**
 - [X] **Clicking on the card shows the corresponding component of the information pair**
 - [X] **Clicking the next button displays a random new card**
+  
+The following **optional** features are implemented:
+
+- [ ] Cards contains images in addition to or in place of text
 - [X] Cards have different visual styles such as color based on their category
   - [X] *Different color boarder based on card difficulty*
 
